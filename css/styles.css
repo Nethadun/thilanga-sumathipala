@@ -43,3 +43,11 @@
         width: 8ch;
     }
 }
+
+.empty{
+    height: 240px;
+}
+
+.lf{
+    left: 100px;
+}

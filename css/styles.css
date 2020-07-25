@@ -1,0 +1,41 @@
+#nav{
+    background-color: #004085;
+    height: 80px;
+}
+
+
+/*.btnHome{*/
+    /*background-color: white;*/
+    /*border: none;*/
+    /*color: #004085;*/
+    /*padding: 2px;*/
+    /*text-align: center;*/
+    /*text-decoration: none;*/
+    /*display: inline-block;*/
+    /*font-size: 10px;*/
+    /*margin: 4px 2px;*/
+    /*border-radius: 12px;*/
+/*}*/
+
+#text_load{
+    animation: type 3s steps(8);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid;
+}
+#text_load1{
+    animation: type 3s steps(8);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid;
+}
+
+@keyframes type {
+    0%{
+        width: 0ch;
+
+    }
+    100%{
+        width: 8ch;
+    }
+}

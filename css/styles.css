@@ -21,13 +21,17 @@
     animation: type 3s steps(8);
     overflow: hidden;
     white-space: nowrap;
+    font-family: Consolas;
     border-right: 4px solid;
+    width: 10ch;
 }
 #text_load1{
-    animation: type 3s steps(8);
+    animation: type 3s steps(10);
     overflow: hidden;
     white-space: nowrap;
+    font-family: Consolas;
     border-right: 4px solid;
+    width: 12ch;
 }
 
 @keyframes type {

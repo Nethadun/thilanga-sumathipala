@@ -111,25 +111,25 @@
             <div class="card">
                 <img src="img/NoPath-Copy-41@2x.png" class="card-img-top" alt="...">
             </div>
-            <h5 class="font-weight-bold text-center">Sri Lankan Cricket</h5>
+            <h5 class="font-weight-bold text-center" id="btnCricket">Sri Lankan Cricket</h5>
         </div>
         <div class="col-md-4">
             <div class="card">
                 <img src="img/NoPath-Copy-45@2x.png" class="card-img-top" alt="...">
             </div>
-            <h5 class="font-weight-bold text-center">Thilanga Sumathipala Foundation</h5>
+            <h5 class="font-weight-bold text-center" id="btnFoundation">Thilanga Sumathipala Foundation</h5>
         </div>
         <div class="col-md-4">
             <div class="card">
                 <img src="img/NoPath-Copy-46@2x.png" class="card-img-top" alt="...">
             </div>
-            <h5 class="font-weight-bold text-center">Parliament</h5>
+            <h5 class="font-weight-bold text-center" id="btnParliament">Parliament</h5>
         </div>
     </div>
     <br>
     <br>
     <br>
-    <div class="row">
+    <div class="row" id="cricket">
         <div class="col-md-6">
             <h1 class="text-center font-weight-bold">The task of the leader is to get his people from where they are to where they have not been. ”</h1>
             <p class="name font-weight-bold text-center">Thilanga Sumathipala</p>
@@ -143,7 +143,61 @@
                     – Division 1, First Class Cricket as well as the Blackheath Cricket Club in the UK.</p>
             </div>
     </div>
+    <div class="row" id="foundation">
+        <div class="col-md-6">
+            <h1 class="text-center font-weight-bold">The task of the leader is to get his people from where they are to where they have not been. ”</h1>
+            <p class="name font-weight-bold text-center">Thilanga Sumathipala</p>
+        </div>
+        <div class="col-md-6" >
+            <h2 class="text-center font-weight-bold">Thilanga Sumathipala Foundation</h2>
+            <p class="text-center">The current President of Sri Lanka Cricket, Hon. Thilanga Sumathipala’s passion for
+                the gentleman’s game started during his schoolboy days at Nalanda College, where he not only played for
+                the XI Cricket team, but also assumed responsibilities as the Vice Captain and was awarded Cricket Colours.
+                His talent and love for the game continued after his school days as he represented the Colombo
+                Cricket Club – Division 1, First Class Cricket as well as the Blackheath Cricket Club in the UK.</p>
+        </div>
+    </div>
+    <div class="row" id="parliament">
+        <div class="col-md-6">
+            <h1 class="text-center font-weight-bold">The task of the leader is to get his people from where they are to where they have not been. ”</h1>
+            <p class="name font-weight-bold text-center">Thilanga Sumathipala</p>
+        </div>
+        <div class="col-md-6">
+            <h2 class="text-center font-weight-bold">Parliament</h2>
+            <p class="text-center">The current President of Sri Lanka Cricket, Hon. Thilanga Sumathipala’s passion
+                for the gentleman’s game started during his schoolboy days at Nalanda College, where he not
+                only played for the XI Cricket team, but also assumed responsibilities as the Vice Captain and was
+                awarded Cricket Colours. His talent and love for the game continued after his school days as he
+                represented the Colombo Cricket Club – Division 1, First Class Cricket as well as the Blackheath
+                Cricket Club in the UK.</p>
+        </div>
+    </div>
 </div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+    $("#cricket").show();
+    $("#foundation").hide();
+    $("#parliament").hide();
+
+    $("#btnParliament").click(function() {
+        $("#cricket").hide();
+        $("#foundation").hide();
+        $("#parliament").show();
+    });
+
+    $("#btnCricket").click(function() {
+        $("#cricket").show();
+        $("#foundation").hide();
+        $("#parliament").hide();
+    });
+
+    $("#btnFoundation").click(function() {
+        $("#cricket").hide();
+        $("#foundation").show();
+        $("#parliament").hide();
+    });
+</script>
 </body>
 </html>
 <!--<span class="navbar-brand mb-0 h1 text-light">Thilanga Sumathipala</span>-->
